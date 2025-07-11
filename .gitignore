@@ -5,3 +5,10 @@ __history
 *.rsm
 bin/Win32/Debug
 bin/Win64/Debug
+/bin/Win64/Release/plugins/SDK/OpenCV/bin/cublas64_12.dll
+/bin/Win64/Release/plugins/SDK/OpenCV/bin/opencv_cudafilters4.dll
+/bin/Win64/Release/plugins/SDK/OpenCV/bin/cublasLt64_12.dll
+/bin/Win64/Release/plugins/SDK/OpenCV/bin/opencv_cudaarithm4.dll
+/bin/Win64/Release/plugins/SDK/OpenCV/bin/cufft64_11.dll
+/bin/Win64/Release/plugins/SDK/OpenCV/bin/opencv_cudawarping4.dll
+/bin/Win64/Release/plugins/SDK/OpenCV/bin/nppif64_12.dll
