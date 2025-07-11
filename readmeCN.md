@@ -24,8 +24,7 @@ eTools
     支持窗体类名动态变化的 EXE、DLL 窗体 程序；支持多文档窗体；
     支持 x86 EXE 调用 x64 EXE，x64 EXE 调用 x86 EXE；
     界面为暗黑风格，保护视力；
-    程序在是英文版 Windows 10 下开发的。所以如果你使用的系统是中文版，那么像记事本、注册表，等 EXE 程序，有可能运行不起来。可以自行到配置文件中修改。
-
+    
 ## 四：使用方法
 ### Delphi：
 * Delphi 原 EXE 工程文件，修改为 DLL 工程。输出导出函数就可以了，原有代码不用作任何修改；
@@ -80,8 +79,9 @@ extern "C" __declspec(dllexport) void db_ShowDllForm_Plugins(TLangStyle* lsFileT
  show              ：显示/隐藏窗体；
 ```
 
-## 六：已知存在的BUG：
+## 六：注意：
     1、文件拖放只能拖放到主窗体上，不能直接拖放到模块 DLL 窗口中；这是由于权限造成的问题(资源管理器是普通权限、而 eTools 是管理员权限)；
+    2、OpenCV SDK x64 版本，由于一些 DLL 文件体积大于 100M，被压缩成 opencv.7z 了，使用前必须先解压(plugins\sdk\opencv)；
 
 ## 七：接下来工作：
     添加数据库支持（由于本人对数据库不熟悉，所以开发较慢，又是业余时间开发）;
