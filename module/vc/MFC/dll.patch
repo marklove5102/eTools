@@ -18,7 +18,7 @@ index fe58179..37641eb 100644
 +extern "C" __declspec(dllexport) void db_ShowDllForm_Plugins(TLangStyle* lsFileType, char** strModuleName, char** strClassName, char** strWindowName, const bool show = false)
 +{
 +	*lsFileType    = lsVCMFCDll;          // TLangStyle
-+	*strModuleName = "系统管理/MFC(DLL)"; // 模块名称
++	*strModuleName = "开发工具/MFC(DLL)"; // 模块名称
 +	*strClassName  = "MFCClassName";      // MFC MDI 主窗体类名
 +	*strWindowName = "MFC01";             // MFC MDI 主窗体标题名称
 +	FbInit = show;
