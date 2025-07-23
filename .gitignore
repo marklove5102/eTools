@@ -3,8 +3,11 @@ __history
 *.local
 *.identcache
 *.rsm
+.vs
 bin/Win32/Debug
 bin/Win64/Debug
+/bin/Win32/Release/plugins/pm.dat
+/bin/Win64/Release/plugins/pm.dat
 /bin/Win64/Release/plugins/SDK/OpenCV/bin/cublas64_12.dll
 /bin/Win64/Release/plugins/SDK/OpenCV/bin/opencv_cudafilters4.dll
 /bin/Win64/Release/plugins/SDK/OpenCV/bin/cublasLt64_12.dll
@@ -12,3 +15,14 @@ bin/Win64/Debug
 /bin/Win64/Release/plugins/SDK/OpenCV/bin/cufft64_11.dll
 /bin/Win64/Release/plugins/SDK/OpenCV/bin/opencv_cudawarping4.dll
 /bin/Win64/Release/plugins/SDK/OpenCV/bin/nppif64_12.dll
+/bin/Win64/Release/plugins/SDK/ffmpeg/bin/avcodec-62.dll
+/bin/Win64/Release/plugins/SDK/ffmpeg/bin/nppif64_12.dll
+/bin/Win32/Release/plugins/plist.dat
+/bin/Win32/Release/plugins/plist.ini
+/bin/Win64/Release/plugins/plist.dat
+/bin/Win64/Release/plugins/plist.ini
+/module/c#/WindowsForm/dll/obj
+/module/c#/WindowsForm/dll/bin
+/module/c#/WindowsForm/MainForm/Windows
+/module/c#/WindowsForm/MainForm/bin
+/module/c#/WindowsForm/MainForm/obj

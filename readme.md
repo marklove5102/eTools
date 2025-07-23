@@ -82,6 +82,9 @@ extern "C" __declspec(dllexport) void db_ShowDllForm_Plugins(TLangStyle* lsFileT
 ## 6. Marked:
     1. File drag-and-drop can only be performed on the main form, not directly on Module DLL windows; this is due to permission issues (the file explorer runs with normal permissions, while eTools runs with administrator permissions);
     2. OpenCV SDK x64 version, due to some DLL files larger than 100M in size, they have been compressed into opencv.7z and must be decompressed before use(plugins\sdk\opencv);
+    3. OpenCV SDK x64 version, utilizes CUDA acceleration, so if your machine does not have an NVIDIA video card, it cannot be used;
+    4. FFMPEG SDK x64 version, due to some DLL files larger than 100M in size, they have been compressed into ffmpeg.7z and must be decompressed before use(plugins\sdk\ffmpeg);
+    5. When adding a new DLL module to the plugins directory, if there is a pm.dat file in the plugins directory, it needs to be deleted before it can take effect;
 
 ## 7. Future Work:
     Add database support (development is slow due to limited familiarity with databases and being a side project);

@@ -82,6 +82,9 @@ extern "C" __declspec(dllexport) void db_ShowDllForm_Plugins(TLangStyle* lsFileT
 ## 六：注意：
     1、文件拖放只能拖放到主窗体上，不能直接拖放到模块 DLL 窗口中；这是由于权限造成的问题(资源管理器是普通权限、而 eTools 是管理员权限)；
     2、OpenCV SDK x64 版本，由于一些 DLL 文件体积大于 100M，被压缩成 opencv.7z 了，使用前必须先解压(plugins\sdk\opencv)；
+    3、OpenCV SDK x64 版本，使用了 CUDA 加速，所以如果你的机器上没有 NVIDIA 视频卡，是没有办法使用的；
+    4、FFMPEG SDK x64 版本，由于一些 DLL 文件体积大于 100M，被压缩成 ffmpeg.7z 了，使用前必须先解压(plugins\sdk\ffmpeg)；
+    5、添加新的 DLL 模块到 plugins 目录时，如果 plugins 目录下存在 pm.dat 文件，需要删除掉 pm.dat 后，才能生效；
 
 ## 七：接下来工作：
     添加数据库支持（由于本人对数据库不熟悉，所以开发较慢，又是业余时间开发）;
