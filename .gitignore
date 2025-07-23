@@ -3,6 +3,7 @@ __history
 *.local
 *.identcache
 *.rsm
+*.pdb
 .vs
 bin/Win32/Debug
 bin/Win64/Debug
